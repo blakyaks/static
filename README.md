@@ -1,2 +1,3 @@
 # static
-static assets
+
+BlakYaks simple static assets.
