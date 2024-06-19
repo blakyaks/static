@@ -24,12 +24,6 @@ install_software () {
         && chmod +x terraform-docs \
         && sudo mv terraform-docs /usr/local/bin/terraform-docs \
         && rm terraform-docs.tar.gz -f
-  elif [[ $software = "tt" ]]
-  then
-    echo "Installing BlakYaks terratest runner..."
-    curl -sfSLo tt https://blakyaks.blob.core.windows.net/utils/tt \
-      && sudo chmod +x tt \
-      && sudo mv tt /usr/local/bin/tt
   else
     echo "$software not found"
   fi  
